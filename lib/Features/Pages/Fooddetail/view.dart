@@ -25,6 +25,7 @@ class FoodDetailPage extends StatelessWidget {
                   icon: const Icon(
                     Icons.arrow_back_ios_rounded,
                     color: Color(0xff000000),
+                    size: 16,
                   ),
                 ),
               ),
