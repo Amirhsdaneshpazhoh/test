@@ -1,34 +1,21 @@
-
-import 'package:flutter_fl/Features/Pages/orderpage/binding.dart';
-import 'package:flutter_fl/Features/Pages/orderpage/view.dart';
+import 'package:flutter_fl/Screens/login_screen.dart';
+import 'package:flutter_fl/Screens/splash/view.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
 
-import '../Pages/Fooddetail/binding.dart';
-import '../Pages/Fooddetail/view.dart';
-import '../Pages/splash/binding.dart';
-import '../Pages/splash/view.dart';
-
-class Routes{
-static String splashpage ='/splashPage';
-static String orderpage ='/orderPage';
-static String fooddetailpage ='/fooddetailPage';
-
-
-
-
+class Routes {
+  static String splashpage = '/splashPage';
+  static String orderpage = '/orderPage';
+  static String fooddetailpage = '/fooddetailPage';
+  static String loginscreen = '/LoginScreen';
 }
-final getPages = [
 
+final getPages = [
   GetPage(
-      name: Routes.splashpage,
-      page: () => SplashPage(),
-      binding: SplashBinding()),
+    name: Routes.splashpage,
+    page: () => SplashPage(),
+  ),
   GetPage(
-      name: Routes.orderpage,
-      page: () => OrderPage(),
-      binding: OrderBinding()),
-  GetPage(
-      name: Routes.fooddetailpage,
-      page: () => FoodDetailPage(),
-      binding: ConfirmBinding()),
+    name: Routes.loginscreen,
+    page: () => LoginScreen(),
+  )
 ];

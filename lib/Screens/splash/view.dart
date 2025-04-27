@@ -16,14 +16,11 @@ class SplashPage extends StatelessWidget {
       builder: (controller) => Scaffold(
         body: Stack(
           children: [
-
-
             Center(
                 child: SvgPicture.asset(
-                  Assets.assetsSplashlogo,
-                )),
+              Assets.assetsSplashlogo,
+            )),
           ],
-
         ),
       ),
     );
